@@ -378,13 +378,13 @@ pre.editor-colors .bracket-matcher .region {
 <ul>
 <li>上传代码到Github</li>
 </ul>
-<p>在GitHub上创建一个自己的库（这里记得选择一个MIT License），down到本地，把自己的项目放进去然后提交。
+<p>在GitHub上创建一个自己的库（这里记得选择一个MIT License），down到本地，把自己的项目放进去然后提交。<br />
 <img src="https://user-images.githubusercontent.com/12045500/38076063-0b644436-3367-11e8-9bea-054b8a342aa1.png" alt="2018-03-29 2 43 32" width="746"></p>
 <ul>
 <li>创建podspec</li>
 </ul>
 <p>打开终端进入工程目录，输入命令<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod spec create HEERONCategory</code> 创建<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">HEERONCategory.podspec</code>
-创建成功如下：
+创建成功如下：<br />
 <img src="https://user-images.githubusercontent.com/12045500/38076107-31c11c44-3367-11e8-8931-81d9a91488fa.png" alt="2018-03-29 2 53 16" width="351"></p>
 <p>编辑<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">HEERONCategory.podspec</code></p>
 <pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Pod::Spec.new&nbsp;do&nbsp;|s|</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"HEERONCategory"</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"1.0.0"</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.summary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"A&nbsp;pod&nbsp;of&nbsp;HeeronChang&nbsp;named&nbsp;HEERONCategory."</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.description&nbsp;&nbsp;=&nbsp;&lt;&lt;-DESC</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;this&nbsp;is&nbsp;a&nbsp;test&nbsp;pod&nbsp;named&nbsp;HEERONCategory&nbsp;of&nbsp;HeeronChang.</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DESC</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.homepage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;"</span><span class="syntax--markup syntax--underline syntax--link syntax--https syntax--hyperlink"><span>https://github.com/heeronchang</span></span><span>"</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.license&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;{&nbsp;:type&nbsp;=&gt;&nbsp;"MIT",&nbsp;:file&nbsp;=&gt;&nbsp;"FILE_LICENSE"&nbsp;}</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.author&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;{&nbsp;"Heeron&nbsp;Chang"&nbsp;=&gt;&nbsp;"heeronchang@outlook.com"&nbsp;}</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.platform&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;:ios,&nbsp;"8.0"</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;{&nbsp;:git&nbsp;=&gt;&nbsp;"</span><span class="syntax--markup syntax--underline syntax--link syntax--https syntax--hyperlink"><span>https://github.com/heeronchang/HEERONCategory.git</span></span><span>",&nbsp;:tag&nbsp;=&gt;&nbsp;"#{s.version}"&nbsp;}</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;s.source_files&nbsp;&nbsp;=&nbsp;"HEERONCategory",&nbsp;"HEERONCategory/**/*.{h,m}"</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>end</span></span></div></pre><p>name 库名</p>
@@ -395,39 +395,39 @@ pre.editor-colors .bracket-matcher .region {
 <p>source 项目的Github地址
 source_files 要共享的代码 <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">HEERONCategory/**/*.{h,m}</code> 代表HEERONCategory下面的所有.h/.m文件（包括子文件夹<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">/**/*</code>代表递归文件夹）</p>
 <p>终端输入<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod lib lint HEERONCategory.podspec --allow-warnings</code> 验证
-验证通过如下：
+验证通过如下：<br />
 <img src="https://user-images.githubusercontent.com/12045500/38076165-6357b560-3367-11e8-84f9-9722c04c69c9.png" alt="2018-03-29 3 08 09" width="255"></p>
 <ul>
 <li>注册CocoaPods</li>
 </ul>
 <p>终端输入<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod trunk register heeronchang@outlook.com 'HEERONCategory'</code>
-进入邮箱验证：
+进入邮箱验证：<br />
 <img src="https://user-images.githubusercontent.com/12045500/38076186-70f1c60c-3367-11e8-9b39-508cf3b8ed54.png" alt="2018-03-29 3 10 58" width="713"></p>
-<p>然后输入<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod trunk me</code> 验证：
+<p>然后输入<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod trunk me</code> 验证：<br />
 <img src="https://user-images.githubusercontent.com/12045500/38076197-773a160e-3367-11e8-9030-179e5650f47e.png" alt="2018-03-29 3 19 46" width="284"></p>
 <ul>
 <li>上传代码到CocoaPods</li>
 </ul>
-<p>输入<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod trunk push HEERONCategory.podspec --allow-warnings</code> 上传代码：</p>
+<p>输入<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pod trunk push HEERONCategory.podspec --allow-warnings</code> 上传代码：</p><br />
 <p><img src="https://user-images.githubusercontent.com/12045500/38085422-0ccd61ec-3383-11e8-868d-5372b7aba963.png" alt="2018-03-29 6 53 24" width="387"></p>
 <h2 id="-">遇到的问题</h2>
 <ul>
-<li>上传代码到CocoaPods的时候提示没有权限，库的所有者竟然是别人
-解决方案一：创建库之前先搜一下是否已经存在和你要创建的库同名的库，免得最后上传代码到CocoaPods的时候出现没有权限的问题
+<li>上传代码到CocoaPods的时候提示没有权限，库的所有者竟然是别人<br />
+解决方案一：创建库之前先搜一下是否已经存在和你要创建的库同名的库，免得最后上传代码到CocoaPods的时候出现没有权限的问题<br />
 解决方案二：暂无</li>
 <li>ERROR | [iOS] The <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">source_files</code> pattern did not match any file.
 出现这个问题一般是<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">s.source_files  = "HEERONCategory", "HEERONCategory/**/*.{h,m}"</code> 这里的原因，查看自己的路径是否正确，然后看看要引用的文件是否提交到了GitHub</li>
 <li>Remote branch v0.0.1 not found in upstream origin
 从远端拉不到v0.0.1branch，解决办法，首次发布时需要创建一个tag<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">v0.0.1</code>，记得<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">v</code>不能丢</li>
 </ul>
-<p>参考
-<a href="https://guides.cocoapods.org/">https://guides.cocoapods.org/</a>
-<a href="https://blog.csdn.net/potato512/article/details/51108813">https://blog.csdn.net/potato512/article/details/51108813</a> （子目录分层）
-<a href="http://www.cocoachina.com/ios/20161027/17869.html">http://www.cocoachina.com/ios/20161027/17869.html</a>
-<a href="https://www.cnblogs.com/zhanglinfeng/p/6283178.html">https://www.cnblogs.com/zhanglinfeng/p/6283178.html</a>
-<a href="https://www.jianshu.com/p/283584683b0b">https://www.jianshu.com/p/283584683b0b</a>
-<a href="https://blog.csdn.net/yst19910702/article/details/72677986">https://blog.csdn.net/yst19910702/article/details/72677986</a>   (私有pod库）
-<a href="http://www.cocoachina.com/ios/20150228/11206.html">http://www.cocoachina.com/ios/20150228/11206.html</a>  (私有pod库）
-<a href="https://www.cnblogs.com/wsyuzx/p/7089564.html">https://www.cnblogs.com/wsyuzx/p/7089564.html</a> (私有库推荐)
-<a href="https://blog.csdn.net/blog_jihq/article/details/52614156">https://blog.csdn.net/blog_jihq/article/details/52614156</a>  (私有库遇到的问题）</p></body>
+<p>参考<br />
+<a href="https://guides.cocoapods.org/">https://guides.cocoapods.org/</a><br />
+<a href="https://blog.csdn.net/potato512/article/details/51108813">https://blog.csdn.net/potato512/article/details/51108813</a> （子目录分层）<br />
+<a href="http://www.cocoachina.com/ios/20161027/17869.html">http://www.cocoachina.com/ios/20161027/17869.html</a><br />
+<a href="https://www.cnblogs.com/zhanglinfeng/p/6283178.html">https://www.cnblogs.com/zhanglinfeng/p/6283178.html</a><br />
+<a href="https://www.jianshu.com/p/283584683b0b">https://www.jianshu.com/p/283584683b0b</a><br />
+<a href="https://blog.csdn.net/yst19910702/article/details/72677986">https://blog.csdn.net/yst19910702/article/details/72677986</a>   (私有pod库）<br />
+<a href="http://www.cocoachina.com/ios/20150228/11206.html">http://www.cocoachina.com/ios/20150228/11206.html</a>  (私有pod库）<br />
+<a href="https://www.cnblogs.com/wsyuzx/p/7089564.html">https://www.cnblogs.com/wsyuzx/p/7089564.html</a> (私有库推荐)<br />
+<a href="https://blog.csdn.net/blog_jihq/article/details/52614156">https://blog.csdn.net/blog_jihq/article/details/52614156</a>  (私有库遇到的问题）</p></body><br />
 </html>
