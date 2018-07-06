@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "git 的简单使用"
+date:   2015-10-15 18:55:00 +0800
+categories: jekyll update
+---
+
+### X步将项目上传到远程库
+1. cd dirpath
+2. touch readme.md
+3. git init
+4. git add .
+5. git commit -m 'init commit'
+6. git remote add origin https://git.xx...xx.git
+7. git push -u origin master
